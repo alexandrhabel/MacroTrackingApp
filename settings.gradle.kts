@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MacroTrackingApp"
+rootProject.name = "PocitaniKalorii"
 include(":app")
  
