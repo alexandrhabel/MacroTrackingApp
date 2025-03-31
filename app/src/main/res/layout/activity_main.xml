@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"/>
+
+    <!-- Tlačítko Přidat jídlo -->
+    <Button
+        android:id="@+id/btnAddMeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PŘIDAT JÍDLO"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FF6200EE"
+        android:textColor="@android:color/white"
+        android:onClick="onAddMealClick" />
+
+    <!-- Statistika kalorií -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/card_background"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dnes snědeno"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tvTotalCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zbývá"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tvRemainingCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Statistika makroživin -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/card_background"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvTotalProtein"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B: 0g"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvTotalCarbs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="S: 0g"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvTotalFat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="T: 0g"
+            android:gravity="center"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- Seznam jídel -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dnešní jídla"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTodayMeals"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:padding="8dp" />
+
+</LinearLayout>

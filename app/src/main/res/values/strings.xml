@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PocitaniKalorii</string>
+    <string-array name="meal_types">
+        <item>Snídaně</item>
+        <item>Svačina</item>
+        <item>Oběd</item>
+        <item>Večeře</item>
+        <item>Jiné</item>
+    </string-array>
+</resources>
