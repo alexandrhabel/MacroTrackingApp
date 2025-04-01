@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="activity_levels">
+        <item>Sedavý (minimum pohybu)</item>
+        <item>Lehká aktivita (1-2x týdně)</item>
+        <item>Střední aktivita (3-4x týdně)</item>
+        <item>Vysoká aktivita (5-6x týdně)</item>
+        <item>Extrémní aktivita (každý den)</item>
+    </string-array>
+
+    <string-array name="goal_types">
+        <item>Hubnutí</item>
+        <item>Udržování váhy</item>
+        <item>Nabírání svalů</item>
+    </string-array>
+
+    <!-- Pro překlad hodnot -->
+    <string-array name="activity_levels_values" translatable="false">
+        <item>sedentary</item>
+        <item>light</item>
+        <item>moderate</item>
+        <item>active</item>
+        <item>extreme</item>
+    </string-array>
+
+    <string-array name="goal_types_values" translatable="false">
+        <item>lose</item>
+        <item>maintain</item>
+        <item>gain</item>
+    </string-array>
+</resources>

@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.KalorickeTabulky" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Your existing theme items -->
+        <item name="android:windowBackground">@color/background</item>
+        <!-- Other theme attributes -->
+    </style>
+</resources>
